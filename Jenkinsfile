@@ -17,7 +17,7 @@ pipeline {
     stage('Deliver') {
       steps {
         sh 'echo \'Delivered successfully\''
-        sh 'sudo cp target/demo.war /home/sysadmin/'
+        sh 'sudo cp target/demo.war /opt/tomcat/webapps/release.war'
       }
     }
 
