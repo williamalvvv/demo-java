@@ -10,12 +10,14 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo \'Test succeded\''
+        sh 'mvn test'
       }
     }
 
     stage('Deliver') {
       steps {
         sh 'echo \'Delivered successfully\''
+        sh 'sudo cp /home/sysadmin'
       }
     }
 
